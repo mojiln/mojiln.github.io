@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CassieLee.Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://cassielee.top/"/>
+  <updated>2019-07-28T08:46:47.728Z</updated>
+  <id>https://cassielee.top/</id>
+  
+  <author>
+    <name>CassieLee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hkzf项目总结</title>
+    <link href="https://cassielee.top/2019/07/28/hkzf%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+    <id>https://cassielee.top/2019/07/28/hkzf项目总结/</id>
+    <published>2019-07-28T08:12:43.000Z</published>
+    <updated>2019-07-28T08:46:47.728Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://cassielee.top/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS面试题</title>
+    <link href="https://cassielee.top/2019/07/25/JS%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://cassielee.top/2019/07/25/JS面试题/</id>
+    <published>2019-07-25T08:08:50.000Z</published>
+    <updated>2019-07-25T08:08:50.737Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ES6面试题</title>
+    <link href="https://cassielee.top/2019/07/19/%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://cassielee.top/2019/07/19/模板/</id>
+    <published>2019-07-19T12:10:02.000Z</published>
+    <updated>2019-07-26T03:12:01.644Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>ES面试题</code></pre><a id="more"></a><h1 id="面试题总结"><a href="#面试题总结" class="headerlink" title="面试题总结"></a>面试题总结</h1><h2 id="v-if-和-v-show-区别"><a href="#v-if-和-v-show-区别" class="headerlink" title="v-if 和 v-show 区别"></a>v-if 和 v-show 区别</h2><p><code>v-show</code>指令仅仅控制元素的显示方式，将<code>display:none</code>属性在 block 和 none 来回切换<br><code>v-if</code>指令会控制这个 DOM 节点的存在与否<br>当我们需要经常切换某个元素的显示/隐藏时，使用 v-show 会更加节省性能;当只需要一次显示或隐藏时，使用 v-if</p><hr><h2 id="Vue-的数据双向绑定原理"><a href="#Vue-的数据双向绑定原理" class="headerlink" title="Vue 的数据双向绑定原理"></a>Vue 的数据双向绑定原理</h2><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;ES面试题&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://cassielee.top/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试题" scheme="https://cassielee.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue面试题总结</title>
+    <link href="https://cassielee.top/2019/07/19/%E9%9D%A2%E8%AF%95%E9%A2%98%20-%20Vue/"/>
+    <id>https://cassielee.top/2019/07/19/面试题 - Vue/</id>
+    <published>2019-07-19T12:10:02.000Z</published>
+    <updated>2019-07-27T00:36:00.820Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>Vue面试题</code></pre><a id="more"></a><h1 id="面试题总结"><a href="#面试题总结" class="headerlink" title="面试题总结"></a>面试题总结</h1><h2 id="v-if-和-v-show-区别"><a href="#v-if-和-v-show-区别" class="headerlink" title="v-if 和 v-show 区别"></a>v-if 和 v-show 区别</h2><p><code>v-show</code>指令仅仅控制元素的显示方式，将<code>display:none</code>属性在 block 和 none 来回切换<br><code>v-if</code>指令会控制这个 DOM 节点的存在与否<br>当我们需要经常切换某个元素的显示/隐藏时，使用 v-show 会更加节省性能;当只需要一次显示或隐藏时，使用 v-if</p><hr><h2 id="Vue-的数据双向绑定原理"><a href="#Vue-的数据双向绑定原理" class="headerlink" title="Vue 的数据双向绑定原理"></a>Vue 的数据双向绑定原理</h2><p>采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty()来劫持各个属性的 setter，getter,在数据变动时发布消息给订阅者，触发响应的监听回调。</p><hr><h2 id="Vue-组件间是怎么通讯的"><a href="#Vue-组件间是怎么通讯的" class="headerlink" title="Vue 组件间是怎么通讯的"></a>Vue 组件间是怎么通讯的</h2><hr><h2 id="常见指令"><a href="#常见指令" class="headerlink" title="常见指令"></a>常见指令</h2><hr><h2 id="怎么定义组件"><a href="#怎么定义组件" class="headerlink" title="怎么定义组件"></a>怎么定义组件</h2><hr><h2 id="Vue-路由是怎么做的（路由的原理）"><a href="#Vue-路由是怎么做的（路由的原理）" class="headerlink" title="Vue 路由是怎么做的（路由的原理）"></a>Vue 路由是怎么做的（路由的原理）</h2><hr><h2 id="怎么请求数据"><a href="#怎么请求数据" class="headerlink" title="怎么请求数据"></a>怎么请求数据</h2><hr><h2 id="谈谈组件化和模块化的区别、"><a href="#谈谈组件化和模块化的区别、" class="headerlink" title="谈谈组件化和模块化的区别、"></a>谈谈组件化和模块化的区别、</h2><p><code>模块化</code>：是从代码逻辑的角度进行划分的，方便代码分层开发，保证每个功能模块的职能单一<br><code>组件化</code>：是从 UI 的角度进行划分的，前端的组件化，方便 UI 组件的复用</p><hr><h2 id="Vue-全家桶"><a href="#Vue-全家桶" class="headerlink" title="Vue 全家桶"></a>Vue 全家桶</h2><hr><h2 id="Vuex-的使用和五个核心"><a href="#Vuex-的使用和五个核心" class="headerlink" title="Vuex 的使用和五个核心"></a>Vuex 的使用和五个核心</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;Vue面试题&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://cassielee.top/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试题" scheme="https://cassielee.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题总结</title>
+    <link href="https://cassielee.top/2019/07/19/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>https://cassielee.top/2019/07/19/面试题/</id>
+    <published>2019-07-19T12:10:02.000Z</published>
+    <updated>2019-07-25T08:01:46.071Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>根据日常总结的知识点进行分析</code></pre><a id="more"></a><h1 id="面试题总结"><a href="#面试题总结" class="headerlink" title="面试题总结"></a>面试题总结</h1><hr><h2 id="写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么？"><a href="#写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么？" class="headerlink" title="写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？"></a>写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？</h2><p>解析：（Vue/React）key 的作用是为了在 diff 算法执行时更快的找到对应的节点，提高 diff 速度</p><p>(Vue)key 的作用是为了在数据变化时强制更新组件，以避免“原地复用”带来的副作用。</p><hr><h2 id="从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？"><a href="#从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？" class="headerlink" title="从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？"></a>从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？</h2><p>解析：DNS 缓存、CDN 缓存、浏览器缓存、服务器缓存</p><h3 id="DNS-缓存-即-（Domain-Name-System-域名系统）"><a href="#DNS-缓存-即-（Domain-Name-System-域名系统）" class="headerlink" title="DNS 缓存 即 （Domain Name System 域名系统）"></a>DNS 缓存 即 （Domain Name System 域名系统）</h3><p>为了增加访问效率， 计算机有域名缓存机制。即当访问过某个网站并得到其 IP 后，会将其域名和 IP 缓存下来， 下一次访问的时候，就不需要再请求域名服务器获取 IP, 直接使用缓存中的 IP，提高了响应的速度。 当前缓存时间是有有效时间的，当过了有效时间后， 还是需要先请求域名解析。</p><p>扩： DNS 预解析</p><p>因为在调用当前页面所在域名外的域名文件时，会遇到请求延时非常严重的情况。<br>我们可以使用 DNS 预解析。</p><ol><li>用 meta 信息来告知浏览器，当前页面要做 DNS 预解析：</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=<span class="string">"x-dns-prefetch-control"</span> content=<span class="string">"on"</span> /&gt;</span><br></pre></td></tr></table></figure><ol start="2"><li>在页面 header 中使用 link 标签来强制对 DNS 预解析</li></ol><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"dns-prefetch"</span> href=<span class="string">"http://bdimg.share.baidu.com"</span> /&gt;</span><br></pre></td></tr></table></figure><h3 id="CDN-即-（Content-Delivery-NetWork）-内容分发网络"><a href="#CDN-即-（Content-Delivery-NetWork）-内容分发网络" class="headerlink" title="CDN 即 （Content Delivery NetWork） 内容分发网络"></a>CDN 即 （Content Delivery NetWork） 内容分发网络</h3><p>CDN 是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN 的关键技术主要有内容存储和分发技术。</p><p>通俗解释：就是当我们发送一个 web 请求时，会先经过它一道手，然后它帮我们计算路径，去哪得到这些东东（representations）的路径短且快。这个是网站管理员部署的，所以他们也可以将大家经常访问的 representations 放在 CDN 里，这样，就响应就更快了。</p><h3 id="浏览器缓存"><a href="#浏览器缓存" class="headerlink" title="浏览器缓存"></a>浏览器缓存</h3><p>通过浏览器实现 HTTP 缓存。</p><p>Expires<br>添加 Expires 头能有效的利用浏览器的缓存能力来改善页面的性能，能在后续的页面中有效避免很多不必要的 Http 请求，WEB 服务器使用 Expires 头来告诉 Web 客户端它可以使用一个组件的当前副本，直到指定的时间为止。</p><p>例如：Expires：Thu，15 Apr 2010 20：00：00 GMT; 他告诉浏览器缓存有效性持续到 2010 年 4 月 15 日为止，在这个时间之内相同的请求使用缓存，这个时间之外使用 http 请求。</p><p>Cathe-Control<br>使用 max-age 指定组件被缓存多久，从请求开始在 max-age 时间内浏览器使用缓存，之外的使用请求，这样就可以消除 Expires 的限制.</p><p>例如：Cathe-Control：max-age=315360000</p><h3 id="服务器缓存"><a href="#服务器缓存" class="headerlink" title="服务器缓存"></a>服务器缓存</h3><p>服务器缓存一般指缓存服务器<br>缓存指的是将需要频繁访问的网络内容存放在离用户较近、访问速度更快的系统中，以提高内容访问速度的一种技术。缓存服务器就是存放频繁访问内容的服务器。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;根据日常总结的知识点进行分析&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://cassielee.top/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试题" scheme="https://cassielee.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://cassielee.top/2019/07/16/hello-world/"/>
+    <id>https://cassielee.top/2019/07/16/hello-world/</id>
+    <published>2019-07-16T03:05:17.329Z</published>
+    <updated>2019-07-16T03:05:17.329Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React的基本使用</title>
+    <link href="https://cassielee.top/2018/07/19/React%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>https://cassielee.top/2018/07/19/React的基本使用/</id>
+    <published>2018-07-19T12:52:02.000Z</published>
+    <updated>2019-07-28T11:55:19.069Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="react-是什么"><a href="#react-是什么" class="headerlink" title="react 是什么"></a>react 是什么</h2><ul><li>React 是一个 JS 库，用来构建用户界面（写 HTML，构建 web 应用）</li><li>从 MVC 的角度来看，相当于 视图层 V（View） 的内容。</li></ul><h2 id="react-的特点"><a href="#react-的特点" class="headerlink" title="react 的特点"></a>react 的特点</h2><ul><li>声明式： 我们只需要描述页面长什么样子就可以了，React 负责更新页面</li><li>基于组件（组件化）</li><li>学习一次，随处使用（Web 、 安卓/ios、vr …）</li></ul><h2 id="React-的基本使用"><a href="#React-的基本使用" class="headerlink" title="React 的基本使用"></a>React 的基本使用</h2><ul><li><p>安装：npm i react react-dom</p></li><li><p>引入 react 和 react-dom 两个 js 文件（注意：引入顺序，react 在前，react-dom 在后）</p></li><li><p>创建 React 元素</p><ul><li><code>const h1 = React.createElement(&#39;h1&#39;, null, &#39;子节点&#39;)</code></li></ul></li><li><p>渲染创建好的 React 元素，到页面中</p><ul><li><code>ReactDOM.render(h1, document.getElementById(&#39;root&#39;))</code></li></ul></li></ul><h2 id="React-createElement-方法的说明"><a href="#React-createElement-方法的说明" class="headerlink" title="React.createElement() 方法的说明"></a>React.createElement() 方法的说明</h2><ul><li>作用：创建 react 元素的</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建React元素</span></span><br><span class="line"><span class="comment">// 第一个参数：表示要创建什么元素，就是 HTML 标签名称</span></span><br><span class="line"><span class="comment">// 第二个参数：表示元素自身属性，如果没有就传 null</span></span><br><span class="line"><span class="comment">//  如果要指定元素自身的属性，就传递一个对象（&#123;&#125;）</span></span><br><span class="line"><span class="comment">//  1 class ==&gt; className</span></span><br><span class="line"><span class="comment">//  2 for ==&gt; htmlFor</span></span><br><span class="line"><span class="comment">// 第三个及其以后的参数：表示元素的子节点（文本、元素节点）</span></span><br><span class="line"><span class="comment">//  如果是文本节点，就直接传递 字符串。</span></span><br><span class="line"><span class="comment">//  如果是元素节点，就继续调用 React.createElement() 方法，创建新的React元素节点</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// const h1 = React.createElement('div', null, 'Hello React')</span></span><br><span class="line"><span class="keyword">const</span> h1 = React.createElement(</span><br><span class="line">  <span class="string">'h1'</span>,</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="string">'title'</span>,</span><br><span class="line">    className: <span class="string">'cls'</span>,</span><br><span class="line">    htmlFor: <span class="string">'d'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">'Hello React'</span>,</span><br><span class="line">  <span class="string">'test 文本节点'</span>,</span><br><span class="line">  React.createElement(<span class="string">'span'</span>, <span class="literal">null</span>, <span class="string">'这是一个span'</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure><h2 id="React-脚手架初始化项目的步骤"><a href="#React-脚手架初始化项目的步骤" class="headerlink" title="React 脚手架初始化项目的步骤"></a>React 脚手架初始化项目的步骤</h2><ul><li>命令：<code>npx create-react-app 项目名称</code><ul><li>比如：<code>npx create-react-app my-app</code></li></ul></li><li>npx 命令：简化使用脚手架初始化项目的流程<ul><li>不使用 npx：1 先全局安装脚手架的包 2 使用脚手架包提供的命令来初始化项目</li><li>使用 npx：不需要再全局安装脚手架的包，直接就可以初始化项目</li></ul></li><li>如何启动项目？进入项目根目录然后，执行以下命令<ul><li>yarn start</li><li>npm start</li></ul></li></ul><h2 id="在脚手架中使用-react"><a href="#在脚手架中使用-react" class="headerlink" title="在脚手架中使用 react"></a>在脚手架中使用 react</h2><ul><li>导入<ul><li><code>import React from &#39;react&#39;</code></li><li><code>import ReactDOM from &#39;react-dom&#39;</code></li></ul></li></ul><h2 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h2><ul><li>为什么要学习 JSX ？<ul><li>因为 createElement 形式，太繁琐，不直观，书写效率不高，所以，我们不想用这种方式。</li><li>JSX 特点：不反锁，直观，书写效率高</li></ul></li><li>JSX 是什么？ JavaScript XML（HTML），也就是在 JS 中书写 HTMl 格式的代码</li></ul><h2 id="JSX-的基本使用"><a href="#JSX-的基本使用" class="headerlink" title="JSX 的基本使用"></a>JSX 的基本使用</h2><ul><li><p>导入 react 和 react-dom</p></li><li><p>使用 JSX 语法创建 React 元素</p><ul><li>JSX 就跟写 HTML 一样</li></ul></li><li><p>渲染创建好的 React 元素</p></li></ul><h2 id="JSX-语法的注意点"><a href="#JSX-语法的注意点" class="headerlink" title="JSX 语法的注意点"></a>JSX 语法的注意点</h2><ul><li><p>JSX 元素的属性名推荐使用：驼峰命名法</p></li><li><p>class ===&gt; className</p></li><li><p>如果元素没有子节点，可以使用 单标签 方式来结束</p><ul><li>比如：<code>&lt;div /&gt;</code></li></ul></li><li><p>推荐使用 () 来包裹 JSX，从而避免 JS 中自动插入分号机制</p></li></ul><h2 id="在-JSX-中使用-JS-表达式（数据）"><a href="#在-JSX-中使用-JS-表达式（数据）" class="headerlink" title="在 JSX 中使用 JS 表达式（数据）"></a>在 JSX 中使用 JS 表达式（数据）</h2><ul><li>语法：使用 {} ，就可以在 JSX 中使用 JS 中的数据了<ul><li><code>&lt;div&gt;Hello {name + &#39;666&#39;}&lt;/div&gt;</code></li></ul></li><li>原则：可以在 {} 中使用任何的 JS 表达式。</li><li>注意：不能在 {} 中，使用 语句！<ul><li>比如： if/for/switch …</li></ul></li><li>注意：不能在 {} 中使用对象，除了 style 属性以外！！！</li><li>JSX 自身也是一个 JS 表达式，所以，可以在 {} 中继续使用 JSX ！！！</li></ul><h2 id="React-的条件渲染"><a href="#React-的条件渲染" class="headerlink" title="React 的条件渲染"></a>React 的条件渲染</h2><ul><li>使用 if/esle 来实现</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (isLoading) &#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;div&gt;loading...&lt;/div&gt;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &lt;div&gt;加载完成后的列表结构&lt;/div&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> h1 = &lt;div&gt;&#123;loadData()&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure><ul><li>使用三元表达式</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading ? &lt;div&gt;loading...&lt;/div&gt; : &lt;div&gt;加载完成后的列表结构&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>逻辑运算符 &amp;&amp;</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading &amp;&amp; &lt;div&gt;loading...&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="React-中的列表渲染"><a href="#React-中的列表渲染" class="headerlink" title="React 中的列表渲染"></a>React 中的列表渲染</h2><ul><li>使用数组的 map 方法来进行列表渲染</li><li>需要给被遍历生成的元素添加 key 属性，key 应该是唯一的。尽量避免使用 index 作为索引号。</li><li>剩下的就是 JS 中 map 方法的使用了。</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &#123;songs.map(<span class="function"><span class="params">item</span> =&gt;</span> (</span><br><span class="line">    &lt;li key=&#123;item.id&#125;&gt;&#123;item.name&#125;&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">  ))&#125;</span></span><br><span class="line"><span class="regexp">&lt;/u</span>l&gt;</span><br></pre></td></tr></table></figure><h2 id="React-中给-JSX-添加样式"><a href="#React-中给-JSX-添加样式" class="headerlink" title="React 中给 JSX 添加样式"></a>React 中给 JSX 添加样式</h2><ul><li>行内样式（style） 不推荐</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> h1 = (</span><br><span class="line">  &lt;h1 style=&#123;&#123; <span class="attr">color</span>: <span class="string">'red'</span>, <span class="attr">fontSize</span>: <span class="number">30</span>, <span class="attr">backgroundColor</span>: <span class="string">'hotpink'</span> &#125;&#125;&gt;</span><br><span class="line">    我变大了</span><br><span class="line">  &lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br></pre></td></tr></table></figure><ul><li>className 类名 — 推荐！！！</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> h1 = &lt;h1 className="pink"&gt;我变大了&lt;/h1&gt;</span><br></pre></td></tr></table></figure><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">;[</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三'</span>, <span class="attr">content</span>: <span class="string">'哈哈，沙发'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三2'</span>, <span class="attr">content</span>: <span class="string">'哈哈，板凳'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三3'</span>, <span class="attr">content</span>: <span class="string">'哈哈，凉席'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三4'</span>, <span class="attr">content</span>: <span class="string">'哈哈，砖头'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三5'</span>, <span class="attr">content</span>: <span class="string">'哈哈，楼下山炮'</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      react基础
+    
+    </summary>
+    
+      <category term="React" scheme="https://cassielee.top/categories/React/"/>
+    
+    
+      <category term="React" scheme="https://cassielee.top/tags/React/"/>
+    
+  </entry>
+  
+</feed>
