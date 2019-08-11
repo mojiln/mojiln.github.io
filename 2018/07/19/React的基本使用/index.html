@@ -531,17 +531,17 @@
 <h2 id="React-的条件渲染"><a href="#React-的条件渲染" class="headerlink" title="React 的条件渲染"></a>React 的条件渲染</h2><ul>
 <li>使用 if/esle 来实现</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (isLoading) &#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;div&gt;loading...&lt;/div&gt;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &lt;div&gt;加载完成后的列表结构&lt;/div&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> h1 = &lt;div&gt;&#123;loadData()&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (isLoading) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>loading...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>加载完成后的列表结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> h1 = <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;loadData()&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>使用三元表达式</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading ? &lt;div&gt;loading...&lt;/div&gt; : &lt;div&gt;加载完成后的列表结构&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading ? <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>loading...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span> : <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>加载完成后的列表结构<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>逻辑运算符 &amp;&amp;</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading &amp;&amp; &lt;div&gt;loading...&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loadData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> isLoading &amp;&amp; <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>loading...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="React-中的列表渲染"><a href="#React-中的列表渲染" class="headerlink" title="React 中的列表渲染"></a>React 中的列表渲染</h2><ul>
 <li>使用数组的 map 方法来进行列表渲染</li>
@@ -558,7 +558,7 @@
 <ul>
 <li>className 类名 — 推荐！！！</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> h1 = &lt;h1 className="pink"&gt;我变大了&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> h1 = <span class="xml"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">className</span>=<span class="string">"pink"</span>&gt;</span>我变大了<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">;[</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三'</span>, <span class="attr">content</span>: <span class="string">'哈哈，沙发'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三2'</span>, <span class="attr">content</span>: <span class="string">'哈哈，板凳'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三3'</span>, <span class="attr">content</span>: <span class="string">'哈哈，凉席'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三4'</span>, <span class="attr">content</span>: <span class="string">'哈哈，砖头'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">user</span>: <span class="string">'张三5'</span>, <span class="attr">content</span>: <span class="string">'哈哈，楼下山炮'</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
@@ -592,14 +592,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/19/ES6/" rel="next" title="ES6面试题">
+                <i class="fa fa-chevron-left"></i> ES6面试题
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/16/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/19/js继承机制/" rel="prev" title="js 的继承机制">
+                js 的继承机制 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -684,7 +688,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

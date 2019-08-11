@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="CassieLee.Blog">
 <meta property="og:description" content="根据日常总结的知识点进行分析">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-25T08:01:46.071Z">
+<meta property="og:updated_time" content="2019-08-05T01:40:00.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题总结">
 <meta name="twitter:description" content="根据日常总结的知识点进行分析">
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  902字
+                  1.9k字
                 </span>
               
 
@@ -405,7 +405,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3分钟
+                  6分钟
                 </span>
               
             </div>
@@ -428,11 +428,11 @@
       
         <pre><code>根据日常总结的知识点进行分析</code></pre><a id="more"></a>
 
-<h1 id="面试题总结"><a href="#面试题总结" class="headerlink" title="面试题总结"></a>面试题总结</h1><hr>
-<h2 id="写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么？"><a href="#写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么？" class="headerlink" title="写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？"></a>写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？</h2><p>解析：（Vue/React）key 的作用是为了在 diff 算法执行时更快的找到对应的节点，提高 diff 速度</p>
+<hr>
+<h2 id="写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么"><a href="#写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么" class="headerlink" title="写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么"></a>写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么</h2><p>解析：（Vue/React）key 的作用是为了在 diff 算法执行时更快的找到对应的节点，提高 diff 速度</p>
 <p>(Vue)key 的作用是为了在数据变化时强制更新组件，以避免“原地复用”带来的副作用。</p>
 <hr>
-<h2 id="从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？"><a href="#从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？" class="headerlink" title="从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？"></a>从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？</h2><p>解析：DNS 缓存、CDN 缓存、浏览器缓存、服务器缓存</p>
+<h2 id="从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理"><a href="#从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理" class="headerlink" title="从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理"></a>从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理</h2><p>解析：DNS 缓存、CDN 缓存、浏览器缓存、服务器缓存</p>
 <h3 id="DNS-缓存-即-（Domain-Name-System-域名系统）"><a href="#DNS-缓存-即-（Domain-Name-System-域名系统）" class="headerlink" title="DNS 缓存 即 （Domain Name System 域名系统）"></a>DNS 缓存 即 （Domain Name System 域名系统）</h3><p>为了增加访问效率， 计算机有域名缓存机制。即当访问过某个网站并得到其 IP 后，会将其域名和 IP 缓存下来， 下一次访问的时候，就不需要再请求域名服务器获取 IP, 直接使用缓存中的 IP，提高了响应的速度。 当前缓存时间是有有效时间的，当过了有效时间后， 还是需要先请求域名解析。</p>
 <p>扩： DNS 预解析</p>
 <p>因为在调用当前页面所在域名外的域名文件时，会遇到请求延时非常严重的情况。<br>我们可以使用 DNS 预解析。</p>
@@ -441,10 +441,8 @@
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=<span class="string">"x-dns-prefetch-control"</span> content=<span class="string">"on"</span> /&gt;</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>在页面 header 中使用 link 标签来强制对 DNS 预解析</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"dns-prefetch"</span> href=<span class="string">"http://bdimg.share.baidu.com"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>在页面 header 中使用 link 标签来强制对 DNS 预解析</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"dns-prefetch"</span> <span class="attr">href</span>=<span class="string">"http://bdimg.share.baidu.com"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="CDN-即-（Content-Delivery-NetWork）-内容分发网络"><a href="#CDN-即-（Content-Delivery-NetWork）-内容分发网络" class="headerlink" title="CDN 即 （Content Delivery NetWork） 内容分发网络"></a>CDN 即 （Content Delivery NetWork） 内容分发网络</h3><p>CDN 是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN 的关键技术主要有内容存储和分发技术。</p>
 <p>通俗解释：就是当我们发送一个 web 请求时，会先经过它一道手，然后它帮我们计算路径，去哪得到这些东东（representations）的路径短且快。这个是网站管理员部署的，所以他们也可以将大家经常访问的 representations 放在 CDN 里，这样，就响应就更快了。</p>
@@ -454,6 +452,22 @@
 <p>Cathe-Control<br>使用 max-age 指定组件被缓存多久，从请求开始在 max-age 时间内浏览器使用缓存，之外的使用请求，这样就可以消除 Expires 的限制.</p>
 <p>例如：Cathe-Control：max-age=315360000</p>
 <h3 id="服务器缓存"><a href="#服务器缓存" class="headerlink" title="服务器缓存"></a>服务器缓存</h3><p>服务器缓存一般指缓存服务器<br>缓存指的是将需要频繁访问的网络内容存放在离用户较近、访问速度更快的系统中，以提高内容访问速度的一种技术。缓存服务器就是存放频繁访问内容的服务器。</p>
+<hr>
+<h2 id="Javascript：history-go-和-history-back-的用法与区别"><a href="#Javascript：history-go-和-history-back-的用法与区别" class="headerlink" title="Javascript：history.go()和 history.back()的用法与区别"></a>Javascript：history.go()和 history.back()的用法与区别</h2><p>go() 方法可加载历史列表中的某个具体的页面。<br>该参数可以是数字，使用的是要访问的 URL 在 History 的 URL 列表中的相对位置。（-1 上一个页面，1 前进一个页面)。或一个字符串，字符串必须是局部或完整的 URL，该函数会去匹配字符串的第一个 URL。</p>
+<p>go(-1):返回上一页，原页面表单中的内容会丢失；<br>back():返回上一页，原页表表单中的内容会保留。</p>
+<hr>
+<h2 id="什么是防抖和节流？有什么区别？如何实现"><a href="#什么是防抖和节流？有什么区别？如何实现" class="headerlink" title="什么是防抖和节流？有什么区别？如何实现"></a>什么是防抖和节流？有什么区别？如何实现</h2><p>防抖(debounce)<br>触发高频事件后 n 秒内函数只会执行一次，如果 n 秒内高频事件再次被触发，则重新计算时间(函数防抖: 任务频繁触发的情况下，只有任务触发的间隔超过指定间隔的时候，任务才会执行。)</p>
+<p>思路：<br>每次触发事件时都取消之前的延时调用方法</p>
+<p>其实函数防抖的原理也非常地简单，通过闭包保存一个标记来保存 setTimeout 返回的值，每当用户输入的时候把前一个 setTimeout clear 掉，然后又创建一个新的 setTimeout，这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> timeout = <span class="literal">null</span> <span class="comment">// 创建一个标记用来存放定时器的返回值</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    clearTimeout(timeout) <span class="comment">// 每当用户输入的时候把前一个 setTimeout clear 掉</span></span><br><span class="line">    timeout = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数</span></span><br><span class="line">      fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">    &#125;, <span class="number">500</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'防抖成功'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> inp = <span class="built_in">document</span>.getElementById(<span class="string">'inp'</span>)</span><br><span class="line">inp.addEventListener(<span class="string">'input'</span>, debounce(sayHi)) <span class="comment">// 防抖</span></span><br></pre></td></tr></table></figure>
+
+<p>节流(throttle)<br>高频事件触发，但在 n 秒内只会执行一次，所以节流会稀释函数的执行频率(函数节流: 指定时间间隔内只会执行一次任务)</p>
+<p>思路：<br>每次触发事件时都判断当前是否有等待执行的延时函数</p>
+<p>简单来说，函数的节流就是通过闭包保存一个标记（canRun = true），在函数的开头判断这个标记是否为 true，如果为 true 的话就继续执行函数，否则则 return 掉，判断完标记后立即把这个标记设为 false，然后把外部传入的函数的执行包在一个 setTimeout 中，最后在 setTimeout 执行完毕后再把标记设置为 true（这里很关键），表示可以执行下一次的循环了。当 setTimeout 还未执行的时候，canRun 这个标记始终为 false，在开头的判断中被 return 掉</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> canRun = <span class="literal">true</span> <span class="comment">// 通过闭包保存一个标记</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!canRun) <span class="keyword">return</span> <span class="comment">// 在函数开头判断标记是否为true，不为true则return</span></span><br><span class="line">    canRun = <span class="literal">false</span> <span class="comment">// 立即设置为false</span></span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 将外部传入的函数的执行放在setTimeout中</span></span><br><span class="line">      fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">      <span class="comment">// 最后在setTimeout执行完毕后再把标记设置为true(关键)表示可以执行下一次循环了。当定时器没有执行的时候标记永远是false，在开头被return掉</span></span><br><span class="line">      canRun = <span class="literal">true</span></span><br><span class="line">    &#125;, <span class="number">500</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(e.target.innerWidth, e.target.innerHeight)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'resize'</span>, throttle(sayHi))</span><br></pre></td></tr></table></figure>
+
+<p>总结：其实函数节流与函数防抖的原理非常简单，巧妙地使用 setTimeout 来存放待执行的函数，这样可以很方便的利用 clearTimeout 在合适的时机来清除待执行的函数。<br>使用函数节流与函数防抖的目的，在开头的栗子中应该也能看得出来，就是为了节约计算机资源。</p>
+<hr>
 
       
     </div>
@@ -580,7 +594,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -658,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面试题总结"><span class="nav-number">1.</span> <span class="nav-text">面试题总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？"><span class="nav-number">1.2.</span> <span class="nav-text">从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS-缓存-即-（Domain-Name-System-域名系统）"><span class="nav-number">1.2.1.</span> <span class="nav-text">DNS 缓存 即 （Domain Name System 域名系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CDN-即-（Content-Delivery-NetWork）-内容分发网络"><span class="nav-number">1.2.2.</span> <span class="nav-text">CDN 即 （Content Delivery NetWork） 内容分发网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览器缓存"><span class="nav-number">1.2.3.</span> <span class="nav-text">浏览器缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器缓存"><span class="nav-number">1.2.4.</span> <span class="nav-text">服务器缓存</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写-React-Vue-项目时为什么要在列表组件中写-key，其作用是什么"><span class="nav-number">1.</span> <span class="nav-text">写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理"><span class="nav-number">2.</span> <span class="nav-text">从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS-缓存-即-（Domain-Name-System-域名系统）"><span class="nav-number">2.1.</span> <span class="nav-text">DNS 缓存 即 （Domain Name System 域名系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CDN-即-（Content-Delivery-NetWork）-内容分发网络"><span class="nav-number">2.2.</span> <span class="nav-text">CDN 即 （Content Delivery NetWork） 内容分发网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览器缓存"><span class="nav-number">2.3.</span> <span class="nav-text">浏览器缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器缓存"><span class="nav-number">2.4.</span> <span class="nav-text">服务器缓存</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Javascript：history-go-和-history-back-的用法与区别"><span class="nav-number">3.</span> <span class="nav-text">Javascript：history.go()和 history.back()的用法与区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是防抖和节流？有什么区别？如何实现"><span class="nav-number">4.</span> <span class="nav-text">什么是防抖和节流？有什么区别？如何实现</span></a></li></ol></div>
             
 
           </div>
