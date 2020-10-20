@@ -1,7 +1,9 @@
 ---
 title: hexo常用命令
 date: 2020-10-19 18:45:38
-tags: tip
+categories:
+  - hexo
+tags: hexo
 ---
 
 # hexo常用命令

@@ -1,6 +1,8 @@
 ---
 title: powershell禁止运行脚本报错问题
 date: 2020-10-19 18:13:20
+categories:
+  - Tip
 tags: tip
 ---
 
