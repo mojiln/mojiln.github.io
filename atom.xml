@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cassielee.top/"/>
-  <updated>2020-03-16T07:01:37.169Z</updated>
+  <updated>2020-10-19T10:51:33.223Z</updated>
   <id>https://cassielee.top/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo常用命令</title>
+    <link href="https://cassielee.top/2020/10/19/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://cassielee.top/2020/10/19/hexo常用命令/</id>
+    <published>2020-10-19T10:45:38.000Z</published>
+    <updated>2020-10-19T10:51:33.223Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h1><a id="more"></a><h2 id="一、安装、升级"><a href="#一、安装、升级" class="headerlink" title="一、安装、升级"></a>一、安装、升级</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g #安装  </span><br><span class="line">npm update hexo -g #升级  </span><br><span class="line">hexo init #初始化</span><br></pre></td></tr></table></figure><h2 id="二、简写"><a href="#二、简写" class="headerlink" title="二、简写"></a>二、简写</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo n "我的博客" == hexo new "我的博客" #新建文章</span><br><span class="line">hexo p == hexo publish</span><br><span class="line">hexo g == hexo generate#生成</span><br><span class="line">hexo s == hexo server #启动服务预览</span><br><span class="line">hexo d == hexo deploy#部署</span><br></pre></td></tr></table></figure><h2 id="三、服务器"><a href="#三、服务器" class="headerlink" title="三、服务器"></a>三、服务器</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。</span><br><span class="line">hexo server -s #静态模式</span><br><span class="line">hexo server -p 5000 #更改端口</span><br><span class="line">hexo server -i 192.168.1.1 #自定义 IP</span><br><span class="line">hexo clean #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo d #开始部署</span><br></pre></td></tr></table></figure><h2 id="四、监视文件变动"><a href="#四、监视文件变动" class="headerlink" title="四、监视文件变动"></a>四、监视文件变动</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate #使用 Hexo 生成静态文件快速而且简单</span><br><span class="line">hexo generate --watch #监视文件变动</span><br></pre></td></tr></table></figure><h2 id="五、完成后部署"><a href="#五、完成后部署" class="headerlink" title="五、完成后部署"></a>五、完成后部署</h2><p>两个命令的作用是相同的</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br><span class="line">hexo deploy -g</span><br><span class="line">hexo server -g</span><br></pre></td></tr></table></figure><h2 id="六、草稿"><a href="#六、草稿" class="headerlink" title="六、草稿"></a>六、草稿</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><h2 id="七、模板"><a href="#七、模板" class="headerlink" title="七、模板"></a>七、模板</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new "postName" #新建文章</span><br><span class="line">hexo new page "pageName" #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo <span class="keyword">new</span> [layout] &lt;title&gt;</span><br><span class="line">hexo <span class="keyword">new</span> photo <span class="string">"My Gallery"</span></span><br><span class="line">hexo <span class="keyword">new</span> <span class="string">"Hello World"</span> --lang tw</span><br></pre></td></tr></table></figure><h2 id="八、推送到服务器上"><a href="#八、推送到服务器上" class="headerlink" title="八、推送到服务器上"></a>八、推送到服务器上</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo n #写文章</span><br><span class="line">hexo g #生成</span><br><span class="line">hexo d #部署 #可与hexo g合并为 hexo d -g</span><br></pre></td></tr></table></figure><h2 id="九、报错"><a href="#九、报错" class="headerlink" title="九、报错"></a>九、报错</h2><p>1、找不到 git 部署</p><p>ERROR Deployer not found: git</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决方法</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>2、部署类型设置 git</p><p>hexo 3.0 部署类型不再是github，_config.yml 中修改</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@***.github.com:***<span class="comment">/***.github.io.git</span></span><br><span class="line"><span class="comment">  branch: master</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hexo常用命令&quot;&gt;&lt;a href=&quot;#hexo常用命令&quot; class=&quot;headerlink&quot; title=&quot;hexo常用命令&quot;&gt;&lt;/a&gt;hexo常用命令&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://cassielee.top/tags/tip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>powershell禁止运行脚本报错问题</title>
+    <link href="https://cassielee.top/2020/10/19/powershell%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
+    <id>https://cassielee.top/2020/10/19/powershell禁止运行脚本报错问题/</id>
+    <published>2020-10-19T10:13:20.000Z</published>
+    <updated>2020-10-19T10:45:11.908Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>powershell禁止运行脚本报错问题，windows环境原因导致</code></pre><a id="more"></a><h2 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h2><p><img src="/images/powershell-error.png" alt></p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ul><li>win+X启动 windows PowerShell（管理员）</li><li>若要在本地计算机上运行您编写的未签名脚本和来自其他用户的签名脚本，请使用以下命令将计算机上的 执行策略更改为 RemoteSigned 执行：set-ExecutionPolicy RemoteSigned</li><li>查看执行策略：get-ExecutionPolicy</li></ul><p><img src="/images/powershell.png" alt></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;powershell禁止运行脚本报错问题，windows环境原因导致&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="tip" scheme="https://cassielee.top/tags/tip/"/>
+    
+  </entry>
   
   <entry>
     <title>JS</title>
