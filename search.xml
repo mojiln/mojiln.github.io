@@ -4,14 +4,20 @@
     <title><![CDATA[hexo常用命令]]></title>
     <url>%2F2020%2F10%2F19%2Fhexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[hexo常用命令 一、安装、升级123npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 二、简写12345hexo n "我的博客" == hexo new "我的博客" #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo server #启动服务预览hexo d == hexo deploy#部署 三、服务器1234567hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。hexo server -s #静态模式hexo server -p 5000 #更改端口hexo server -i 192.168.1.1 #自定义 IPhexo clean #清除缓存 网页正常情况下可以忽略此条命令hexo g #生成静态网页hexo d #开始部署 四、监视文件变动12hexo generate #使用 Hexo 生成静态文件快速而且简单hexo generate --watch #监视文件变动 五、完成后部署两个命令的作用是相同的 1234hexo generate --deployhexo deploy --generatehexo deploy -ghexo server -g 六、草稿1hexo publish [layout] &lt;title&gt; 七、模板12345678hexo new "postName" #新建文章hexo new page "pageName" #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo deploy #将.deploy目录部署到GitHubhexo new [layout] &lt;title&gt;hexo new photo "My Gallery"hexo new "Hello World" --lang tw 八、推送到服务器上123hexo n #写文章hexo g #生成hexo d #部署 #可与hexo g合并为 hexo d -g 九、报错1、找不到 git 部署 ERROR Deployer not found: git 12解决方法npm install hexo-deployer-git --save 2、部署类型设置 git hexo 3.0 部署类型不再是github，_config.yml 中修改 123456# Deployment## Docs: http://hexo.io/docs/deployment.htmldeploy: type: git repository: git@***.github.com:***/***.github.io.git branch: master]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
-        <tag>tip</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[powershell禁止运行脚本报错问题]]></title>
     <url>%2F2020%2F10%2F19%2Fpowershell%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[powershell禁止运行脚本报错问题，windows环境原因导致 报错信息 解决方案 win+X启动 windows PowerShell（管理员） 若要在本地计算机上运行您编写的未签名脚本和来自其他用户的签名脚本，请使用以下命令将计算机上的 执行策略更改为 RemoteSigned 执行：set-ExecutionPolicy RemoteSigned 查看执行策略：get-ExecutionPolicy]]></content>
+      <categories>
+        <category>Tip</category>
+      </categories>
       <tags>
         <tag>tip</tag>
       </tags>
