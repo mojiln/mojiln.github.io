@@ -43,7 +43,7 @@
     <link href="https://cassielee.top/2020/10/19/powershell%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
     <id>https://cassielee.top/2020/10/19/powershell禁止运行脚本报错问题/</id>
     <published>2020-10-19T10:13:20.000Z</published>
-    <updated>2020-10-20T04:05:11.202Z</updated>
+    <updated>2020-10-23T06:54:49.729Z</updated>
     
     <content type="html"><![CDATA[<pre><code>powershell禁止运行脚本报错问题，windows环境原因导致</code></pre><a id="more"></a><h2 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h2><p><img src="/images/powershell-error.png" alt></p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ul><li>win+X启动 windows PowerShell（管理员）</li><li>若要在本地计算机上运行您编写的未签名脚本和来自其他用户的签名脚本，请使用以下命令将计算机上的 执行策略更改为 RemoteSigned 执行：set-ExecutionPolicy RemoteSigned</li><li>查看执行策略：get-ExecutionPolicy</li></ul><p><img src="/images/powershell.png" alt></p><hr>]]></content>
     
