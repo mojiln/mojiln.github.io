@@ -83,28 +83,6 @@
   </entry>
   
   <entry>
-    <title>Vue面试题总结</title>
-    <link href="https://cassielee.top/2019/07/19/%E9%9D%A2%E8%AF%95%E9%A2%98%20-%20Vue/"/>
-    <id>https://cassielee.top/2019/07/19/面试题 - Vue/</id>
-    <published>2019-07-19T12:10:02.000Z</published>
-    <updated>2020-10-23T06:54:49.729Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code>Vue面试题</code></pre><a id="more"></a><h2 id="v-if-和-v-show-区别"><a href="#v-if-和-v-show-区别" class="headerlink" title="v-if 和 v-show 区别"></a>v-if 和 v-show 区别</h2><p><code>v-show</code>指令仅仅控制元素的显示方式，将<code>display:none</code>属性在 block 和 none 来回切换<br><code>v-if</code>指令会控制这个 DOM 节点的存在与否<br>当我们需要经常切换某个元素的显示/隐藏时，使用 v-show 会更加节省性能;当只需要一次显示或隐藏时，使用 v-if</p><hr><h2 id="Vue-的数据双向绑定原理"><a href="#Vue-的数据双向绑定原理" class="headerlink" title="Vue 的数据双向绑定原理"></a>Vue 的数据双向绑定原理</h2><p>采用<strong>数据劫持结合发布者-订阅者模式</strong>的方式，通过 Object.defineProperty()来劫持各个属性的 setter，getter,在数据变动时发布消息给订阅者，触发响应的监听回调。</p><hr><h2 id="Vue-组件间是怎么通讯的"><a href="#Vue-组件间是怎么通讯的" class="headerlink" title="Vue 组件间是怎么通讯的"></a>Vue 组件间是怎么通讯的</h2><hr><h2 id="常见指令"><a href="#常见指令" class="headerlink" title="常见指令"></a>常见指令</h2><hr><h2 id="怎么定义组件"><a href="#怎么定义组件" class="headerlink" title="怎么定义组件"></a>怎么定义组件</h2><hr><h2 id="Vue-路由是怎么做的（路由的原理）"><a href="#Vue-路由是怎么做的（路由的原理）" class="headerlink" title="Vue 路由是怎么做的（路由的原理）"></a>Vue 路由是怎么做的（路由的原理）</h2><hr><h2 id="怎么请求数据"><a href="#怎么请求数据" class="headerlink" title="怎么请求数据"></a>怎么请求数据</h2><hr><h2 id="谈谈组件化和模块化的区别、"><a href="#谈谈组件化和模块化的区别、" class="headerlink" title="谈谈组件化和模块化的区别、"></a>谈谈组件化和模块化的区别、</h2><p><code>模块化</code>：是从代码逻辑的角度进行划分的，方便代码分层开发，保证每个功能模块的职能单一<br><code>组件化</code>：是从 UI 的角度进行划分的，前端的组件化，方便 UI 组件的复用</p><hr><h2 id="Vue-全家桶"><a href="#Vue-全家桶" class="headerlink" title="Vue 全家桶"></a>Vue 全家桶</h2><hr><h2 id="Vuex-的使用和五个核心"><a href="#Vuex-的使用和五个核心" class="headerlink" title="Vuex 的使用和五个核心"></a>Vuex 的使用和五个核心</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;pre&gt;&lt;code&gt;Vue面试题&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="面试题" scheme="https://cassielee.top/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="面试题" scheme="https://cassielee.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
     <title>面试题总结</title>
     <link href="https://cassielee.top/2019/07/19/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <id>https://cassielee.top/2019/07/19/面试题/</id>
@@ -116,6 +94,28 @@
     <summary type="html">
     
       &lt;pre&gt;&lt;code&gt;根据日常总结的知识点进行分析&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://cassielee.top/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="面试题" scheme="https://cassielee.top/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue面试题总结</title>
+    <link href="https://cassielee.top/2019/07/19/%E9%9D%A2%E8%AF%95%E9%A2%98%20-%20Vue/"/>
+    <id>https://cassielee.top/2019/07/19/面试题 - Vue/</id>
+    <published>2019-07-19T12:10:02.000Z</published>
+    <updated>2020-10-23T06:54:49.729Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>Vue面试题</code></pre><a id="more"></a><h2 id="v-if-和-v-show-区别"><a href="#v-if-和-v-show-区别" class="headerlink" title="v-if 和 v-show 区别"></a>v-if 和 v-show 区别</h2><p><code>v-show</code>指令仅仅控制元素的显示方式，将<code>display:none</code>属性在 block 和 none 来回切换<br><code>v-if</code>指令会控制这个 DOM 节点的存在与否<br>当我们需要经常切换某个元素的显示/隐藏时，使用 v-show 会更加节省性能;当只需要一次显示或隐藏时，使用 v-if</p><hr><h2 id="Vue-的数据双向绑定原理"><a href="#Vue-的数据双向绑定原理" class="headerlink" title="Vue 的数据双向绑定原理"></a>Vue 的数据双向绑定原理</h2><p>采用<strong>数据劫持结合发布者-订阅者模式</strong>的方式，通过 Object.defineProperty()来劫持各个属性的 setter，getter,在数据变动时发布消息给订阅者，触发响应的监听回调。</p><hr><h2 id="Vue-组件间是怎么通讯的"><a href="#Vue-组件间是怎么通讯的" class="headerlink" title="Vue 组件间是怎么通讯的"></a>Vue 组件间是怎么通讯的</h2><hr><h2 id="常见指令"><a href="#常见指令" class="headerlink" title="常见指令"></a>常见指令</h2><hr><h2 id="怎么定义组件"><a href="#怎么定义组件" class="headerlink" title="怎么定义组件"></a>怎么定义组件</h2><hr><h2 id="Vue-路由是怎么做的（路由的原理）"><a href="#Vue-路由是怎么做的（路由的原理）" class="headerlink" title="Vue 路由是怎么做的（路由的原理）"></a>Vue 路由是怎么做的（路由的原理）</h2><hr><h2 id="怎么请求数据"><a href="#怎么请求数据" class="headerlink" title="怎么请求数据"></a>怎么请求数据</h2><hr><h2 id="谈谈组件化和模块化的区别、"><a href="#谈谈组件化和模块化的区别、" class="headerlink" title="谈谈组件化和模块化的区别、"></a>谈谈组件化和模块化的区别、</h2><p><code>模块化</code>：是从代码逻辑的角度进行划分的，方便代码分层开发，保证每个功能模块的职能单一<br><code>组件化</code>：是从 UI 的角度进行划分的，前端的组件化，方便 UI 组件的复用</p><hr><h2 id="Vue-全家桶"><a href="#Vue-全家桶" class="headerlink" title="Vue 全家桶"></a>Vue 全家桶</h2><hr><h2 id="Vuex-的使用和五个核心"><a href="#Vuex-的使用和五个核心" class="headerlink" title="Vuex 的使用和五个核心"></a>Vuex 的使用和五个核心</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;Vue面试题&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
